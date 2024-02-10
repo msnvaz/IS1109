@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Description Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        select {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Job Offer Description Form</h2>
+
+    <form action="submit_form.php" method="post">
+
+        <label for="jobTitle">Job Title:</label>
+        <input type="text" id="jobTitle" name="jobTitle" required>
+		
+	    
+        <label for="jobCategory">Job Category:</label>      
+        <select name="jobCategory"> 
+            
+		
+    		<option>Agriculture</option>
+            <option>Education</option>
+    		<option>Plantation and Livestock</option>
+    		<option>Art Design and Media(Visual and Performing)</option>
+            <option>Automobile Repair and Maintenance</option>
+            <option>Building and Construction</option>
+            <option>Electrical, Electronics and Telecommunication</option>
+            <option>Finance Banking and Management</option>
+            <option>Food Technology</option>
+            <option>Gem and Jewellery</option>
+            <option>Heavy Vehicles Operations</option>
+            <option>Hotel and Tourism</option>
+            <option>Human Resource Management</option>
+            <option>Information Communication and Multimedia Technology Languages</option>
+            <option>Leather and Footwear</option>
+            <option>Marine and Nautical Science</option>
+            <option>Mechatronics Technology</option>
+            <option>Medical and Health Science</option>
+            <option>Metal and Light Engineering</option>
+            <option>Office Management</option>
+            <option>Personal and Community Development</option>
+            <option>Printing and Packaging</option>
+            <option>Refrigeration and Air Conditioning</option>
+            <option>Textile and Garment</option>
+            <option>Wood Related</option>
+
+        
+    
+    </select>
+</br>
+
+        <label for="jobDescription">Job Description:</label>
+        <textarea id="jobDescription" name="jobDescription" rows="4" required></textarea>
+
+        <label for="requirements">Requirements:</label>
+        <textarea id="requirements" name="requirements" rows="4" required></textarea>
+
+        <label for="applicationDeadline">Application Deadline:</label>
+        <input type="date" id="applicationDeadline" name="applicationDeadline" required>
+
+        <label for="contactEmail">Contact Email:</label>
+        <input type="email" id="contactEmail" name="contactEmail" placeholder="qwerty@abc.com"required>
+
+        <label for="contactPhone">Contact Phone Number:</label>
+        <input type="tel" id="contactPhone" name="phone" pattern="[0-9]{10}" maxlength="10" placeholder="07XXXXXXXX" required>
+
+        <button type="submit">Submit</button>
+    </form>
+
+
+
+
+
+
+    <section>
+        <h2>Guidelines</h2>
+        <p>
+           <h4>Follow Laws and Regulations:
+        </h4> 
+Ensure your job posting complies with labor laws and equal opportunity regulations.
+</p><h4>
+Clear Job Description:
+</h4><p>
+Provide an accurate job description with details about responsibilities and qualifications.
+</p><h4>
+Transparent Compensation:
+</h4><p>
+Clearly state the salary range, benefits, and job type.
+</p><h4>
+Inclusive Language:
+</h4><p>
+Use inclusive language and avoid any form of bias in your job posting.
+</p><h4>
+Equal Opportunity Employer:
+</h4><p>
+Include a statement expressing your commitment to equal opportunities for all candidates.
+</p><h4>
+Accurate Company Information:
+</h4><p>
+Provide correct company details and a brief overview of your culture.
+</p><h4>
+Verify Information:
+</h4><p>
+Double-check and ensure all details in the job posting are accurate.
+</p><h4>
+Clear Application Process:
+</h4><p>
+Clearly explain how candidates should apply, required documents, and any deadlines.
+</p><h4>
+Respect Privacy:
+</h4><p>
+Handle candidate information with respect to privacy laws.
+</p><h4>
+Review for Bias:
+</h4><p>
+Check for unintentional bias and make adjustments for a fair and inclusive representation.
+        </p>
+    </section>
+
+    <footer>
+        
+    </footer>
+
+</body>
+</html>
