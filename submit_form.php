@@ -1,9 +1,9 @@
 <?php
 // Database connection parameters
-$servername = "your_mysql_server";
-$username = "your_mysql_username";
-$password = "your_mysql_password";
-$dbname = "your_database_name";
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "sandeep_vaz";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -23,7 +23,7 @@ $contactEmail = $_POST['contactEmail'];
 $contactPhone = $_POST['contactPhone'];
 
 // Insert data into the database
-$sql = "INSERT INTO jobs (jobTitle, jobCategory, jobDescription, requirements, applicationDeadline, contactEmail, contactPhone) 
+$sql = "INSERT INTO joboffers (jobTitle, jobCategory, jobDescription, requirements, applicationDeadline, contactEmail, contactPhone) 
         VALUES ('$jobTitle', '$jobCategory', '$jobDescription', '$requirements', '$applicationDeadline', '$contactEmail', '$contactPhone')";
 
 if ($conn->query($sql) === TRUE) {

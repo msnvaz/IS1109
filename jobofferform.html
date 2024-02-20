@@ -3,39 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
     <title>Job Description Form</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-
-        select {
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        input, textarea {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 15px;
-            box-sizing: border-box;
-        }
-
-        button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-    </style>
+        
+   
 </head>
 <body>
 
@@ -95,7 +67,7 @@
         <input type="email" id="contactEmail" name="contactEmail" placeholder="qwerty@abc.com"required>
 
         <label for="contactPhone">Contact Phone Number:</label>
-        <input type="tel" id="contactPhone" name="phone" pattern="[0-9]{10}" maxlength="10" placeholder="07XXXXXXXX" required>
+        <input type="text" id="contactPhone" name="phone" pattern="[0-9]{10}" maxlength="10" placeholder="07XXXXXXXX" required>
 
         <button type="submit">Submit</button>
     </form>
