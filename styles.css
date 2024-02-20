@@ -1,13 +1,26 @@
-
-
 body {
     background-color: #2c3e50;
     color: #ecf0f1;
     font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #3498db;
 }
 
 form {
-    max-width: 400px;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #34495e;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+div {
+        max-width: 600px;
     margin: 50px auto;
     padding: 20px;
     background-color: #34495e;
@@ -22,7 +35,9 @@ label {
 
 input[type="text"],
 input[type="email"],
-input[type="password"] {
+input[type="password"],
+input[type="date"],
+textarea {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
@@ -33,26 +48,6 @@ input[type="password"] {
     border-radius: 4px;
     outline: none;
 }
-
-input[type="submit"] {
-    background-color: #3498db;
-    color: #ecf0f1;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-input[type="submit"]:hover {
-    background-color: #2980b9;
-}
-
-
-input[type="checkbox"],
-input[type="radio"] {
-    margin-right: 5px;
-}
-
 
 select {
     width: 100%;
@@ -66,23 +61,35 @@ select {
     outline: none;
 }
 
-textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-    background-color: #2c3e50;
+button {
+    background-color: #3498db;
     color: #ecf0f1;
-    border: 1px solid #566573;
+    padding: 10px 15px;
+    border: none;
     border-radius: 4px;
-    outline: none;
+    cursor: pointer;
 }
 
-button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Additional styling for the guidelines section */
+section {
+    background-color: #34495e;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    color: #3498db;
+}
+
+/* Additional styling for the footer (if needed) */
+footer {
+    background-color: #2c3e50;
+    padding: 10px;
+    text-align: center;
 }
